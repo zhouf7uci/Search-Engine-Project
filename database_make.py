@@ -28,8 +28,7 @@ DOC_PATH_IMPORTANT_WORDS_MAP_PATH = "doc_path_important_words_map.json"
 DOC_PATH_WORD_COUNT_MAP_PATH = "doc_path_word_count_map.json"
 WORD_ID_PATH = "word_id.json"
 
-# MAX_DIR_NO = 75
-MAX_DIR_NO = 2
+MAX_DIR_NO = 75
 
 
 class Database:
@@ -41,7 +40,6 @@ class Database:
         self.doc_path_important_words_map = {}
         # {path: {word: count, ...}}
         self.doc_path_word_count_map = {}
-        '''不含最后两个文件'''
         self.total_doc_count = 0 
         self.total_word_count = 0
         self.primary_dir = ''
